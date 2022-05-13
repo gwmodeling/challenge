@@ -1,6 +1,8 @@
 # The Groundwater Modeling Challenge
 
-This repository contains all the information and materials for the Groundwater Time Series Modeling Challenge. We invite every interested groundwater modeler to model the five different hydraulic head time series found in the data folder, and send in their best possible simulated heads time series. 
+This repository contains all the information and materials for the Groundwater Time Series Modeling Challenge, [as announced at the 2022 EGU General Assembly](https://doi.org/10.5194/egusphere-egu22-12580). We invite every interested groundwater modeler to model the five different hydraulic head time series found in the data folder, and send in their best possible simulated heads time series. 
+
+## Background & Objectives
 
 ## Head data
 Five hydraulic head time series were selected for this challenge. The monitoring wells are located in sedimentary aquifers, but in different climatological and hydrogeological settings. 
