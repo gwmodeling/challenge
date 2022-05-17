@@ -10,13 +10,6 @@ Different types of models can be applied to model groundwater level time series,
 ## Head data
 Five hydraulic head time series were selected for this challenge. The monitoring wells are located in sedimentary aquifers, but in different climatological and hydrogeological settings. 
 
-## Modeling rules
-
-- Participants may use any type of model.
-- The groundwater time series themselves may not be used as model input.
-- The hydraulic heads observed between 2000 and 2015, or part thereof, may be used for calibration. 
-- The modeling workflow must be reproducible, preferably through the use of scripts, but otherwise described in enough detail to reproduce the results.
-
 ## Model inputs
 The model may use (part of) the following data, which is provided as part of the challenge for 2000-2020:
 
@@ -25,6 +18,14 @@ The model may use (part of) the following data, which is provided as part of the
 -	Potential evaporation (Hamon)
 
 It is permitted to use any other publicly available data (e.g., soil maps) to construct the model. The use of other meteorological data that that provided is not permitted, to ensure that differences between the models are not the result of the meteorological input data. It is also not permitted to use the hydraulic heads as explanatory variables in the model.
+
+## Modeling rules
+
+- Participants may use any type of model.
+- The groundwater time series themselves may not be used as model input.
+- The hydraulic heads observed between 2000 and 2015, or part thereof, may be used for calibration. 
+- The modeling workflow must be reproducible, preferably through the use of scripts, but otherwise described in enough detail to reproduce the results.
+- Alternative model data must be described in sufficient detail and submitted with model outputs
 
 ## Model outputs
 
