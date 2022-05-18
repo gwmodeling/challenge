@@ -10,13 +10,6 @@ Different types of models can be applied to model groundwater level time series,
 ## Head data
 Five hydraulic head time series were selected for this challenge. The monitoring wells are located in sedimentary aquifers, but in different climatological and hydrogeological settings. 
 
-## Modeling rules
-
-- Participants may use any type of model.
-- The groundwater time series themselves may not be used as model input.
-- The hydraulic heads observed between 2000 and 2015, or part thereof, may be used for calibration. 
-- The modeling workflow must be reproducible, preferably through the use of scripts, but otherwise described in enough detail to reproduce the results.
-
 ## Model inputs
 The model may use (part of) the following data, which is provided as part of the challenge for 2000-2020:
 
@@ -26,13 +19,29 @@ The model may use (part of) the following data, which is provided as part of the
 
 It is permitted to use any other publicly available data (e.g., soil maps) to construct the model. The use of other meteorological data that that provided is not permitted, to ensure that differences between the models are not the result of the meteorological input data. It is also not permitted to use the hydraulic heads as explanatory variables in the model.
 
+## Modeling rules
+
+- Participants may use any type of model.
+- The groundwater time series themselves may not be used as model input.
+- The hydraulic heads observed between 2000 and 2015, or part thereof, may be used for calibration. 
+- The modeling workflow must be reproducible, preferably through the use of scripts, but otherwise described in enough detail to reproduce the results.
+- Supplementary model data must be described in sufficient detail and submitted with model outputs
+
 ## Model outputs
 
 The model is expected to compute: 
 -	The prediction of the hydraulic head at a daily time interval over the entire period 2000-2020, including the 95% prediction interval of the hydraulic head at a daily time interval over the entire period 2000-2020.
--	The step response of 10 mm/day precipitation, and 3 mm/day potential evaporation, including the 95% confidence interval of that step response. Time series to compute this quantity using the calibrated model are provided.
+-	The step response of 10 mm/day precipitation, and 3 mm/day potential evaporation, including the 95% confidence interval of that step response. Time series to compute this quantity using the calibrated model are provided. (optional)
 
 A form that can be used to submit the results is provided.
+
+## Deliverables
+
+The following data should be submitted:
+- Model outputs (see above)
+- Model workflow through scripts or description
+- Supplementary model data (list and data)
+- Estimation of effort (time)
 
 ## Model evaluation
 The models will be evaluated using several goodness-of-fit metrics and groundwater signatures, computed for both the calibration and the validation period.
