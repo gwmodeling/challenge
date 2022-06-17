@@ -4,7 +4,7 @@ This repository contains all the information and materials for the Groundwater T
 
 Important: Data will be released mid June 2022, if you're interested to join you can already let us know!
 
-**Organisers:** R.A. Collenteur (University of Graz), Ezra Haaf (Chalmers), T. Liesch (KIT), and M. Bakker (TU Delft)
+**Organisers:** R.A. Collenteur (University of Graz), E. Haaf (Chalmers), T. Liesch & A. Wunsch (KIT), and M. Bakker (TU Delft)
 
 ## Background & Objectives
 Different types of models can be applied to model groundwater level time series, ranging from purely statistical models (black-box), through lumped conceptual models (grey-box), to process-based models (white-box). Traditionally, physically based, distributed models are predominantly used to solve groundwater problems. In recent years, the use of grey- and black-box models has been receiving increased attention. With this challenge, we want to showcase the diversity of models the can be applied to solve groundwater problems, and systematically asses their differences and performances. 
