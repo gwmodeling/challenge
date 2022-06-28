@@ -1,8 +1,10 @@
 # The Groundwater Modeling Challenge
 
+**Update 2022/06/28: Data release is unfortunately delayed until mid-July.
+
 This repository contains all the information and materials for the Groundwater Time Series Modeling Challenge, [as announced at the 2022 EGU General Assembly](https://doi.org/10.5194/egusphere-egu22-12580). We invite every interested groundwater modeler to model the five different hydraulic head time series found in the data folder, and send in their best possible simulated heads time series. 
 
-Important: Data will be released mid June 2022, if you're interested to join you can already let us know!
+Important: Data will be released mid July 2022, if you're interested to join you can already let us know!
 
 **Organisers:** R.A. Collenteur (University of Graz), E. Haaf (Chalmers), T. Liesch & A. Wunsch (KIT), and M. Bakker (TU Delft)
 
