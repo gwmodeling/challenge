@@ -1,6 +1,6 @@
 # Hydraulic head data
 
-This folder contains the hydraulic head data for the modeling challenge. All data is available for the period 2015-2015. At the end of the challenge, this data will be updated to include the validation period (2015-2020).
+This folder contains the hydraulic head data for the modeling challenge. All data is available for the period 2000-2015. At the end of the challenge, this data will be updated to include the validation period (2015-2020).
 
 ## Files
 
