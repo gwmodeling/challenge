@@ -19,6 +19,7 @@ v25.0e at 0.1deg grid size.
 - Daily averaged relative humidity (HU) in%.
 - Daily mean wind speed (FG) in m/s.
 - Daily mean global radiation (QQ) in W/m2.
+- Potential evaporation (ET) computed with Makkink in mm/d.
 
 ## Calibration and testing data
 

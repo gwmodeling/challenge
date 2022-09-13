@@ -16,6 +16,7 @@ The following input data is provided to model the head time series.
 - Daily minimum temperature (TMin) in degree Celsius.
 - Daily maximum temperature (Tmax) in degree Celsius.
 - River stage (Stage_m) in meter.
+- Potential evaporation (ET) computed with Hargreaves method in mm/d.
 
 ## Calibration and testing data
 
