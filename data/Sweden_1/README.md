@@ -1,7 +1,7 @@
 # Monitoring well Sweden 1
 
 ## Location description
-Unconfined fractured rock aquifer in granite, average distance to groundwater 1.6m, no overburden soil, open 
+Unconfined fractured rock aquifer in granite (fractured), average distance to groundwater 1.6m, no overburden soil, open 
 borehole, depth of borehole 57m, coniferous forest.
 
 ![Head data](head_data.png)
