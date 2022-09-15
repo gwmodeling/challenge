@@ -1,7 +1,7 @@
 # Monitoring well Germany
 
 ## Location description
-The well is a deep karstic well in the Upper Jurassic Malm Karst aquifer, which is overlain by a local alluviual aquifer in a small river valley.
+The well is situated in Bavaria, in the Upper Jurassic Malm Karst aquifer. It is a deep, confined aquifer (partly artisian), which is overlain by a local alluviual aquifer in a small river valley. Surface elevation is about 375 masl, depth to groundwater 0.9 m on average.
 
 ![Head data](head_data.png)
 
