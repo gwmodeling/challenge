@@ -38,4 +38,4 @@ will have the same information.
 ## Data Acknowledgments
 
 - We acknowledge the E-OBS dataset from the EU-FP6 project UERRA (https://www.uerra.eu) and the Copernicus Climate 
-Change Service, and the data providers in the ECA&D project (https://www.ecad.eu)
+Change Service, and the data providers in the ECA&D project (https://www.ecad.eu), as well as the Swedish Geological Survey (SGU)
