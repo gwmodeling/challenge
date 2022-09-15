@@ -1,7 +1,11 @@
 # Monitoring well Netherlands
 
 ## Location description
-A short description of the monitoring well and local hydrogeological setting will follow here.
+This monitoring well is located in the north of the Netherlands in the province of Drenthe. The surface elevation is 
+about 11.35 meters above mean sea level, and the well is screened from -0.05 to -0.95 below surface level. The well 
+is located in an unconfined aquifer, consisting of a ~1.5 meter top-layer of peat materials underlain by fine sands. 
+The area is characterized by many small surface water drainages, through which groundwater is likely drained above a 
+certain groundwater level.
 
 ![Head data](head_data.png)
 
@@ -38,3 +42,4 @@ will have the same information.
 
 - We acknowledge the E-OBS dataset from the EU-FP6 project UERRA (https://www.uerra.eu) and the Copernicus Climate 
 Change Service, and the data providers in the ECA&D project (https://www.ecad.eu)
+- We acknowledge DINOloket for providing the hydraulic head time series (https://www.dinoloket.nl/).  
