@@ -1,7 +1,7 @@
 # Monitoring well Germany
 
 ## Location description
-A short description of the monitoring well and local hydrogeological setting will follow here.
+The well is a deep karstic well in the Upper Jurassic Malm Karst aquifer, which is overlain by a local alluviual aquifer in a small river valley.
 
 ![Head data](head_data.png)
 
