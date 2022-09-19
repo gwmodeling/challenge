@@ -15,15 +15,15 @@ v25.0e at 0.1deg grid size.
 - Daily minimum temperature (TM) in degree Celsius.
 - Daily maximum temperature (TX) in degree Celsius.
 - Daily averaged sea level pressure (PP) in hPa.
-- Daily averaged relative humidity (HU) in%.
+- Daily averaged relative humidity (HU) in %.
 - Daily mean wind speed (FG) in m/s.
 - Daily mean global radiation (QQ) in W/m2.
 - Potential evaporation (ET) computed with Makkink in mm/d.
 
 ## Calibration and testing data
 
-The head data is split into a training and testing period. Data is provided for the training period. A simulated time 
-series has to be provided for the entire period.
+The head data are split into a training and testing period. Data are provided for the training/calibration period. Participants have to provide a simulated time 
+series for the entire period.
 
 - **Training period:** 2002-05-01 to 2016-12-31
 - **Testing period:** 2017-01-01 to 2021-12-31
