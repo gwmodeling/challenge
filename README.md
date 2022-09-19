@@ -60,7 +60,8 @@ released after the challenge ended.
 The deadline for the challenge is **31/12/2022**. Please make sure to submit before this date. We plan to share the 
 results of this challenge at the EGU General Assembly 2023.
 
-## Submission
+## Participation & Submission
+If you intend to participate, [please open a GitHub Issue for your team](https://github.com/gwmodeling/challenge/issues), such that we can track the participating teams.
 
 Participant can submit their model results as a Pull Request to this Repository, adding a folder with their results 
 in the 'submissions' folder. The model results must be submitted in a way that they are reproducible, either through 
