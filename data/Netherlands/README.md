@@ -11,7 +11,7 @@ certain groundwater level.
 
 ## Input data description
 
-The following input data are provided to model the head time series. This data was collected from the E-OBS dataset 
+The following input data are provided to model the head time series. This data were collected from the E-OBS dataset 
 v25.0e at 0.1deg grid size.
 
 - Daily Precipitation (RR) in mm/d.
@@ -19,7 +19,7 @@ v25.0e at 0.1deg grid size.
 - Daily minimum temperature (TM) in degree Celsius.
 - Daily maximum temperature (TX) in degree Celsius.
 - Daily averaged sea level pressure (PP) in hPa.
-- Daily averaged relative humidity (HU) in%.
+- Daily averaged relative humidity (HU) in %.
 - Daily mean wind speed (FG) in m/s.
 - Daily mean global radiation (QQ) in W/m2.
 - Potential evaporation (ET) computed with Makkink in mm/d.
