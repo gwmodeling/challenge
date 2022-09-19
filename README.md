@@ -1,6 +1,6 @@
 # The Groundwater Modeling Challenge
 
-**Update 2022/09/19: Data is released and the challenge has started!.**
+**Update 2022/09/19: Data is released and the challenge has started !**
 
 This repository contains all the information and materials for the Groundwater Time Series Modeling Challenge, [as 
 announced at the 2022 EGU General Assembly](https://doi.org/10.5194/egusphere-egu22-12580). We invite every 
