@@ -11,7 +11,7 @@ certain groundwater level.
 
 ## Input data description
 
-The following input data is provided to model the head time series. This data was collected from the E-OBS dataset 
+The following input data are provided to model the head time series. This data was collected from the E-OBS dataset 
 v25.0e at 0.1deg grid size.
 
 - Daily Precipitation (RR) in mm/d.
@@ -26,8 +26,8 @@ v25.0e at 0.1deg grid size.
 
 ## Calibration and testing data
 
-The head data is split into a training and testing period. Data is provided for the training period. A simulated time 
-series has to be provided for the entire period.
+The head data are split into a training and testing period. Data are provided for the training/calibration period. Participants have to provide a simulated time 
+series for the entire period:
 
 - **Training period:** 2000-01-01 to 2015-09-10
 - **Testing period:** 2016-01-01 to 2021-12-31
