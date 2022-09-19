@@ -10,7 +10,7 @@ approximately 135.3 m below surface level. The distance to the nearby surface wa
 
 ## Input data description
 
-The following input data is provided to model the head time series. 
+The following input data are provided to model the head time series. 
 
 - Daily Precipitation (PRCP) in mm/d.
 - Daily minimum temperature (TMin) in degree Celsius.
@@ -20,8 +20,8 @@ The following input data is provided to model the head time series.
 
 ## Calibration and testing data
 
-The head data is split into a training and testing period. Data is provided for the training period. A simulated time 
-series has to be provided for the entire period.
+The head data are split into a training and testing period. Data are provided for the training/calibration period. Participants have to provide a simulated time 
+series for the entire period: 
 
 - **Training period:** 2002-03-01 to 2016-12-31
 - **Testing period:** 2017-01-01 to 2022-05-31
