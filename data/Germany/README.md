@@ -23,7 +23,7 @@ v25.0e at 0.1deg grid size.
 ## Calibration and testing data
 
 The head data are split into a training and testing period. Data are provided for the training/calibration period. Participants have to provide a simulated time 
-series for the entire period.
+series for the entire period:
 
 - **Training period:** 2002-05-01 to 2016-12-31
 - **Testing period:** 2017-01-01 to 2021-12-31
