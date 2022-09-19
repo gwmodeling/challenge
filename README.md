@@ -1,6 +1,6 @@
 # The Groundwater Modeling Challenge
 
-**Update 2022/08/11: Data release is unfortunately delayed until August/September.**
+**Update 2022/09/19: Data is released and the challenge has started!.**
 
 This repository contains all the information and materials for the Groundwater Time Series Modeling Challenge, [as 
 announced at the 2022 EGU General Assembly](https://doi.org/10.5194/egusphere-egu22-12580). We invite every 
@@ -23,7 +23,7 @@ performances.
 
 Five hydraulic head time series were selected for this challenge. The monitoring wells are located in sedimentary 
 aquifers, but in different climatological and hydrogeological settings. Depending on the location. different input 
-time series are available to model the heads. Please find all data and descriptions in the [data folder](https://github.com/gwmodeling/challenge/tree/main/data)
+time series are available to model the heads. Please find all data and descriptions in the [data folder](https://github.com/gwmodeling/challenge/tree/main/data).
 
 It is permitted to use any other publicly available data (e.g., soil maps) to construct the model. The use of other 
 meteorological data that that provided is not permitted, to ensure that differences between the models are not the 
@@ -64,8 +64,7 @@ results of this challenge at the EGU General Assembly 2023.
 
 Participant can submit their model results as a Pull Request to this Repository, adding a folder with their results 
 in the 'submissions' folder. The model results must be submitted in a way that they are reproducible, either through 
-the use of scripts (preferred) or detailed description of the modeling process. See the [submissions folder](https://github.com/gwmodeling/challenge/tree/main/submissions) A 
-for a more detailed description on how and what to submit.
+the use of scripts (preferred) or detailed description of the modeling process. See the [submissions folder](https://github.com/gwmodeling/challenge/tree/main/submissions) for a more detailed description on how and what to submit.
 
 ## Questions/ Comments ?
 
