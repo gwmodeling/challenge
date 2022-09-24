@@ -67,6 +67,8 @@ Participant can submit their model results as a Pull Request to this Repository,
 in the 'submissions' folder. The model results must be submitted in a way that they are reproducible, either through 
 the use of scripts (preferred) or detailed description of the modeling process. See the [submissions folder](https://github.com/gwmodeling/challenge/tree/main/submissions) for a more detailed description on how and what to submit.
 
+After the challenge we intend to write an article to submit to a peer-reviewed journal with all the organisers and participants.
+
 ## Questions/ Comments ?
 
 To make sure everyone has access to the same information we ask you to put any questions that are of general 
