@@ -34,4 +34,5 @@ will have the same information.
 
 ## Data Acknowledgments
 
-- Source data acknowledgments will be added here.
+- We acknowledge the United States Geological Survey (www.usgs.gov) for providing the river stage and hydraulic head time series.
+- We acknowledge the National Centers for Environmental Information of the National Oceanic and Atmospheric Administration (www.noaa.gov) for providing the precipitation, minimum temperature, and maximum temperature time series.
