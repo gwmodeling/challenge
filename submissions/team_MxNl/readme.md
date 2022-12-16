@@ -4,18 +4,17 @@ In this file the submission is described.
 
 ## Author(s)
 
-- Author 1 (Affiliation(s))
-- Author 2 (Affiliation(s))
+- Author 1 (German Federal Institute for Geoscience and Resources (BGR))
 
 ## Modeled locations
 
 We modelled the following locations (check modelled locations):
 
 - [x] Netherlands
-- [ ] Germany
-- [X] Sweden 1
-- [ ] Sweden 2
-- [ ] USA
+- [x] Germany
+- [x] Sweden 1
+- [x] Sweden 2
+- [x] USA
 
 ## Model description
 
@@ -30,8 +29,7 @@ environment settings.
 
 ## Supplementary model data used
 
-Please describe any additional information that was used to model the hydraulic head time series. If no additional 
-information was used, please state: 'No additional information was obtained and/or used.'
+No additional model data was used.
 
 ## Estimation of effort
 
