@@ -4,23 +4,21 @@ In this file the submission is described.
 
 ## Author(s)
 
-- Author 1 (Affiliation(s))
-- Author 2 (Affiliation(s))
+- Julian Koch (juko@geus.dk) Geological Survey of Denmark and Greenland, Department of Hydrology 
+- Raphael Schneider (rs@geus.dk) Geological Survey of Denmark and Greenland, Department of Hydrology 
 
 ## Modeled locations
 
 We modelled the following locations (check modelled locations):
 
 - [x] Netherlands
-- [ ] Germany
+- [x] Germany
 - [X] Sweden 1
-- [ ] Sweden 2
-- [ ] USA
+- [x] Sweden 2
+- [x] USA
 
 ## Model description
-
-We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
-implemented in the XX software package that was used here.
+We applied a Long Short Term Memory (LSTM) model for modelling the gw timeseries. We used off-the-shelf keras functionalities in python to build our model. For each well, we trained models with a single LSTM layer. The mean-squared-error was used to train the central prediction. The confidence intervals (upper and lower boundaries) were trained separately with using a quantile regression loss function. The LSTM models were design to simulate a single day of gw head given a sequence historic meteorological variables.  
 
 ## Model workflow to reproduce
 
@@ -30,8 +28,8 @@ environment settings.
 
 ## Supplementary model data used
 
-Please describe any additional information that was used to model the hydraulic head time series. If no additional 
-information was used, please state: 'No additional information was obtained and/or used.'
+The following variables have been derived from the meteorological data provided: rolling window sums of rainfall rate (365D, 730D and 1095D), rolling window sums of net rainfall rate (180D, 365D, 730D and 1095D) and snow storage, snow melt and 90D rolling window sum of snow melt.   
+Snow storage and snow melt is implemented in a very simple manner, with the degree-day method as implemented in the MikeSHE modelling software, with melting temperature: 0 C and max. wet snow fraction: 0 and degree-day melting coefficient: 3 mm/C/d.
 
 ## Estimation of effort
 
@@ -39,14 +37,14 @@ Please provide an (rough) estimate of the time it took to develop the models (e.
 structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that 
 were required.
 
-| Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
-|-------------|------------------------|----------------------|------------------|
-| Netherlands | ~ 2                    | 40                   | 02:00:40         |
-| Germany     |                        |                      |                  |
-| Sweden 1    |                        |                      |                  |
-| Sweden 2    |                        |                      |                  |
-| USA         |                        |                      |                  |
+| Location    | Development time (hrs) | Calibration time (hrs) | Total time (hrs) | 
+|-------------|------------------------|------------------------|------------------|
+| Netherlands | ~ 2                    | 15                     | 17               |
+| Germany     | ~ 2                    | 15                     | 17               |
+| Sweden 1    | ~ 2                    | 15                     | 17               |
+| Sweden 2    | ~ 2                    | 15                     | 17               |
+| USA         | ~ 2                    | 15                     | 17               |
 
 ## Additional information
 
-If you want to provide any additional information about your model/submission/results, please do so here.
+Model training and testing has been done on CPU with 20 cores 
