@@ -22,9 +22,10 @@ We applied a Long Short Term Memory (LSTM) model for modelling the gw timeseries
 
 ## Model workflow to reproduce
 
-Please provide a detailed description of the modeling workflow here, in such a way that the results may be 
-reproduced independently by others. The preferred way to ensure reproducibility is to provide a commented script and 
-environment settings.
+1) Interpolate all missing days (between the first and the last observation) in the observed gw head timeseries using linear interpolation.   
+2) Process additional meteorological variables (described in supplementary section below)
+3) Calibrate LSTM parameters: dropout, recurrent_dropout, learning_rate, n_steps (iput sequence length), batchsize, c_cells and calibrate the length of the rolling window sums of the supplementary meteorological variables. For calibration we used the Pareto Archived Dynamically Dimensioned Search (ParaPADDS) in OSTRICH optimization software.
+4) Apply optimized parameters to model the entire period required for the submission (details on LSTM implementation and optimized parameters can be found in the submitted .py files) 
 
 ## Supplementary model data used
 
