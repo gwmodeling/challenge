@@ -19,9 +19,18 @@ We modelled the following locations (check modelled locations):
 
 ## Model description
 
-We used an ensemble of random forest models implemented in the R language using the 'tidymodels' framework (Kuhnand Wickham, 2020) 
+We used an ensemble of random forest models implemented in the R language using the 'tidymodels' framework (Kuhn and Wickham, 2020) 
 and the 'ranger' implementation of random forest (Wright and Ziegler, 2017). This approach is derived from the one described in Di Ciacca et al, 2022
 but with several modifications to fit the purpose of this challenge.
+
+#References
+
+Kuhn, M. and Wickham, H.: Tidymodels: a collection of packages for modeling and machine learning using tidyverse principles., https:
+//www.tidymodels.org, 2020.
+Wright, M. N. and Ziegler, 670 A.: ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R, Journal of
+Statistical Software, 77, 1–17, https://doi.org/10.18637/jss.v077.i01, 2017.
+Di Ciacca, A., Wilson, S., Kang, J., and Wöhling, T.: Deriving transmission losses in ephemeral rivers using satellite imagery and machine learning, 
+EGUsphere [preprint], https://doi.org/10.5194/egusphere-2022-833, 2022. 
 
 ## Model workflow to reproduce
 
@@ -33,9 +42,6 @@ No additional information was obtained and/or used.
 
 ## Estimation of effort
 
-Please provide an (rough) estimate of the time it took to develop the models (e.g., read in data, pick a model 
-structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that 
-were required.
 
 | Location    | Development time (hrs) | Calibration time (s)                | Total time (hrs) | 
 |-------------|------------------------|-----------------------------------  |------------------|
