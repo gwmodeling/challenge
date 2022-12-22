@@ -9,7 +9,7 @@ import os
 
 def q01(s, o):
     """
-    1 % percentile difference Q05obs - Q05sim 
+    1 % percentile difference Q01obs - Q01sim 
     input:
         s: simulated
         o: observed
@@ -21,7 +21,7 @@ def q01(s, o):
 
 def q99(s, o):
     """
-    99 % percentile difference Q95obs - Q95sim
+    99 % percentile difference Q99obs - Q99sim
     input:
         s: simulated
         o: observed
