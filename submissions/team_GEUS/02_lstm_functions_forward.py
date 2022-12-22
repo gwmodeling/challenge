@@ -4,15 +4,15 @@ import functions as fn
 from matplotlib import pyplot as plt
 
 wells=["Germany","Netherlands","Sweden_1","Sweden_2","USA"]
-kges=np.empty((5))
+
 f=0
 # optimized parameters: n_steps	batchsize	n_cells	dropout	rec_dropout	learning_rate	rr_acc	rrnet_acc	snow
 lstm_par={
-    "Germany": [98,127,93,0,0.3784635,5.0E-03,1,3,0],
-    "Netherlands": [95,105,55,0,0.4,5.0E-03,0,2,1],
-    "Sweden_1": [34,78,91,0,0.2962307,0.01155852,2,3,0],
-    "Sweden_2": [7,91,128,0,0.2828973,0.00569216,2,3,1],
-    "USA": [69,84,82,0.3549504,0.3118095,0.007674205,0,2,1]
+    "Germany": [70,128,16,0.1235991,0.005899819,0.003489363,1,1,0],
+    "Netherlands": [66,118,79,0.02927205,0.307829,0.001,2,2,1],
+    "Sweden_1": [75,77,101,0.06206156,0.4,0.001,2,0,0],
+    "Sweden_2": [7,81,62,0.167958,0.29374,0.001,2,1,0],
+    "USA": [49,74,49,0.246498,0.2360094,0.002731655,2,4,0]
     }
 
 # which climate variables to use
@@ -162,8 +162,4 @@ for well in wells:
     
     out.to_csv('teamGEUS_submission_'+well+'.csv')
     
-    
-    temp=pd.concat([dat_head,out], ignore_index=False, axis=1)
-    temp=temp.dropna()
-    kges[f]=fn.kge(temp["Simulated Head"].values,temp["head"].values)[0]
     f=f+1
