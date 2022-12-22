@@ -27,8 +27,10 @@ but with several modifications to fit the purpose of this challenge.
 
 Kuhn, M. and Wickham, H.: Tidymodels: a collection of packages for modeling and machine learning using tidyverse principles., https:
 //www.tidymodels.org, 2020.
+
 Wright, M. N. and Ziegler, 670 A.: ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R, Journal of
 Statistical Software, 77, 1–17, https://doi.org/10.18637/jss.v077.i01, 2017.
+
 Di Ciacca, A., Wilson, S., Kang, J., and Wöhling, T.: Deriving transmission losses in ephemeral rivers using satellite imagery and machine learning, 
 EGUsphere [preprint], https://doi.org/10.5194/egusphere-2022-833, 2022. 
 
