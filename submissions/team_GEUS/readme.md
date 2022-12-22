@@ -1,4 +1,4 @@
-# Team Example
+# Team GEUS
 
 In this file the submission is described. 
 
