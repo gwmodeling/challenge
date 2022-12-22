@@ -7,7 +7,7 @@ In this file the submission is described.
 - Jeremy White (Intera)
 - Nick Martin (SWRI)
 - Rui Hugman (Intera)
-- Mike Fiene (USGS)
+- Mike Fienen (USGS)
 - Ed de Sousa (Intera)
 
 ## Modeled locations
