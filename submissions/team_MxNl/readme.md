@@ -1,10 +1,10 @@
-# Team Example
+# Team MxNl
 
 In this file the submission is described. 
 
 ## Author(s)
 
-- Author 1 (German Federal Institute for Geoscience and Resources (BGR))
+- Maximilian Nölscher (German Federal Institute for Geoscience and Resources (BGR)) [ORCID](https://orcid.org/0000-0001-5606-1900)
 
 ## Modeled locations
 
@@ -18,7 +18,7 @@ We modelled the following locations (check modelled locations):
 
 ## Model description
 
-We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
+I used an ensemble of different shallow, non-sequential learners (Multi-Layer Perceptron (MLP), Boosting Trees (BT), Radial Basis Function support Vector Machine (RBF-SVM), Polynomial Support Vector Machine (P-SVM)). The set of members of the ensemble is different for each of the time series due to the automated tuning and stacking pipline of ensemble candidates. This pipeline is described more in detail below. the model XX as described in detail in XX et al. (1979).
 implemented in the XX software package that was used here.
 
 ## Model workflow to reproduce
@@ -29,7 +29,7 @@ environment settings.
 
 ## Supplementary model data used
 
-No additional model data was used.
+No additional data was used for modelling. Feature engineering is only based on the provided data.
 
 ## Estimation of effort
 
