@@ -4,34 +4,31 @@ In this file the submission is described.
 
 ## Author(s)
 
-- Author 1 (Affiliation(s))
-- Author 2 (Affiliation(s))
+- Didier VANDEN BERGHE ("VeloVolant")
+
 
 ## Modeled locations
 
 We modelled the following locations (check modelled locations):
 
 - [x] Netherlands
-- [ ] Germany
+- [X] Germany
 - [X] Sweden 1
-- [ ] Sweden 2
-- [ ] USA
+- [X] Sweden 2
+- [X] USA
 
 ## Model description
 
-We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
-implemented in the XX software package that was used here.
+We used the model GARDENIA 8.8 as described in detail in Thiéry (2011) - BRGM (French Geological Survey). This is a Grey Box type of model. The model is 
+implemented in the GARDENIA software package that was used here.
 
 ## Model workflow to reproduce
 
-Please provide a detailed description of the modeling workflow here, in such a way that the results may be 
-reproduced independently by others. The preferred way to ensure reproducibility is to provide a commented script and 
-environment settings.
+The model has a user interface that produces input files (txt format), explicit and easy to manipulate for any French speaking scientist. The model has the capability to simulate one or several reservoirs. Up to 3 reservoirs have been considered, for the NL case, however a single reservoir approach was the default and simplifiest strategy adopted as often as possible. The GARDENIA model relies on some simplified water budget and hydrodynamic parameters. However little consideration for the reliability of the parameter values was given, as the goal is more to perform a good "statistical" calibration and thus a good prediction rather than a good physical model calibration. 
 
 ## Supplementary model data used
 
-Please describe any additional information that was used to model the hydraulic head time series. If no additional 
-information was used, please state: 'No additional information was obtained and/or used.'
+No additional data were used. Only the gw levels, rr and et records were used.
 
 ## Estimation of effort
 
@@ -41,12 +38,12 @@ were required.
 
 | Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------|------------------------|----------------------|------------------|
-| Netherlands | ~ 2                    | 40                   | 02:00:40         |
-| Germany     |                        |                      |                  |
-| Sweden 1    |                        |                      |                  |
-| Sweden 2    |                        |                      |                  |
-| USA         |                        |                      |                  |
+| Netherlands | ~ 0,5                  | 40                   | 02:00:40         |
+| Germany     | ~ 0,25                 | 40                   | 02:00:40         |
+| Sweden 1    | ~ 0,5                  | 40                   | 02:00:40         |
+| Sweden 2    | ~ 0,5                  | 40                   | 02:00:40         |
+| USA         | ~ 0,25                 | 40                   | 02:00:40         |
 
 ## Additional information
 
-If you want to provide any additional information about your model/submission/results, please do so here.
+Swedisch cases were not calibrated correctly (Nash around 3). NL case was calibrated correctly only if considering 3 reservoirs. 
