@@ -49,8 +49,7 @@ From this point, the four feature engineering recipes differ. For details on dif
 - Standardization of numeric predictors
 - Lagged predictors were added for the predictors rr (precipitation) and et (evapotranspiration) for up to 25 weeks.
 
-The most recent 10% of each time series was used for testing. The remaining 90% were used for tuning the hyperparameters. A 5-fold crossvalidation with ?? repetitions was used as resampling strategy as I used non-sequential learners only. The tuning was conducted with a simple grid search with ?? different values for each parameter, leading to $n_{levels}^{n_{hyperparameters}}$ combinations
-
+The most recent 10% of each time series was used for testing. The remaining 90% were used for tuning the hyperparameters. A 5-fold crossvalidation with ?? repetitions was used as resampling strategy as I used non-sequential learners only. The tuning was conducted with a simple grid search with ?? different values/levels for each parameter, leading to $n_{levels}^{n_{hyperparameters}}$ combinations. The tuning was done for all learners for all four feature engineering recipes and for all locations. RMSE was used as metric during tuning. The two best performing models of each learner were chosen as possible candiates for building the ensemble. 
 
 ## Supplementary model data used
 
