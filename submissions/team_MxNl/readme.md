@@ -16,14 +16,12 @@ We modelled the following locations:
 ## Model description
 
 I used an ensemble of different shallow, non-sequential learners 
-- Multi-Layer Perceptron (MLP), 
-- Boosting Trees (BT), 
-- Random Forest (RF), 
-- Radial Basis Function support Vector Machine (RBF-SVM), 
-- Polynomial Support Vector Machine (P-SVM)). 
+- Multi-Layer Perceptron (MLP), Rpackage `nnet`, Rosenblatt, F. (1957)
+- Random Forest (RF), Breiman, Rpackage `ranger`, L., & Cutler, A. (2001)
+- Radial Basis Function support Vector Machine (RBF-SVM), Rpackage `kernlab`, Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992)
+- Polynomial Support Vector Machine (P-SVM), Rpackage `kernlab`, Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992)
 
-The set of members of the ensemble is different for each of the time series due to the automated tuning and stacking pipline of ensemble candidates. This pipeline is described more in detail below. the model XX as described in detail in XX et al. (1979).
-implemented in the XX software package that was used here.
+The set of members of the ensemble is different for each of the time series due to the automated tuning and stacking pipline of ensemble candidates. This pipeline is described more in detail below
 
 ## Model workflow to reproduce
 
@@ -57,17 +55,12 @@ No additional data was used for modelling. Feature engineering is only based on 
 
 ## Estimation of effort
 
-Please provide an (rough) estimate of the time it took to develop the models (e.g., read in data, pick a model 
-structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that 
-were required.
+The provided development time also includes some trial and error iterations with different models and hyperparameter ranges, bug fixing etc.
+The tuning took for all locations took around ?? hours and is not included in the table. 
 
 | Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------|------------------------|----------------------|------------------|
-| Netherlands | ~ 2                    | 40                   | 02:00:40         |
-| Germany     |                        |                      |                  |
-| Sweden 1    |                        |                      |                  |
-| Sweden 2    |                        |                      |                  |
-| USA         |                        |                      |                  |
+| all together | ~  20                 | ??                   | 02:00:40         |
 
 ## Additional information
 
