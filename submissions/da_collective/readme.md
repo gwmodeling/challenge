@@ -1,4 +1,4 @@
-# Team Example
+# The DA Submission
 
 In this file the submission is described. 
 
@@ -23,7 +23,7 @@ We modelled the following locations (check modelled locations):
 ## Model description
 
 We used the model Pastas as described in detail in Collenteur et al. (2019). This is a TFN type of model. The model is 
-implemented in the Pastas software package that was used here.  We used PESTPP-IES to derive a posterior ensemble of Pastas parameters and forcing multipliers
+implemented in the Pastas software package that was used here.  We used PESTPP-IES and a lot of dirty tricks to derive a highly-subjective posterior ensemble of Pastas parameters and forcing multipliers that were used to produce a best-fit and upper/lower confidence interval.  This is all detailed in the provided workflow
 
 ## Model workflow to reproduce
 
