@@ -1,6 +1,6 @@
-# The DA Submission
+# The DA Collective
 
-In this file the submission is described. 
+In this file the submission is described from the DA Collective
 
 ## Author(s)
 
@@ -27,7 +27,7 @@ implemented in the Pastas software package that was used here.  We used PESTPP-I
 
 ## Model workflow to reproduce
 
-Everything is encapsulated in "workflow.py". Specific version of Pastas and pyEMU as included, as are binaries for PESTPP-IES
+Everything is encapsulated in workflow/ dir and is driven by "workflow.py". Specific version of Pastas and pyEMU as included, as are binaries for PESTPP-IES
 
 ## Supplementary model data used
 
