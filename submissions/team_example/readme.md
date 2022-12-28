@@ -4,16 +4,16 @@ In this file the submission is described.
 
 ## Author(s)
 
-- Author 1 (Affiliation(s))
-- Author 2 (Affiliation(s))
+- Xinyue (Selina) Wang (Brown University DSI)
+- Yang Zheng (Brown University DSI)
 
 ## Modeled locations
 
 We modelled the following locations (check modelled locations):
 
 - [x] Netherlands
-- [ ] Germany
-- [X] Sweden 1
+- [x] Germany
+- [] Sweden 1
 - [ ] Sweden 2
 - [ ] USA
 
@@ -21,6 +21,11 @@ We modelled the following locations (check modelled locations):
 
 We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
 implemented in the XX software package that was used here.
+- SVR 
+- random forest
+- package: phython sklearn (include versions)
+
+
 
 ## Model workflow to reproduce
 
@@ -30,8 +35,7 @@ environment settings.
 
 ## Supplementary model data used
 
-Please describe any additional information that was used to model the hydraulic head time series. If no additional 
-information was used, please state: 'No additional information was obtained and/or used.'
+No additional information was obtained and/or used.
 
 ## Estimation of effort
 
@@ -41,11 +45,14 @@ were required.
 
 | Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------|------------------------|----------------------|------------------|
-| Netherlands | ~ 2                    | 40                   | 02:00:40         |
-| Germany     |                        |                      |                  |
+| Netherlands | ~ 4                    | 40                   | 02:00:40         |
+| Germany     | ~ 28                   |                      |                  |
 | Sweden 1    |                        |                      |                  |
 | Sweden 2    |                        |                      |                  |
 | USA         |                        |                      |                  |
+
+Most of the time was spent developing the model for Germany, and then we applied the similar procedure to the Netherlands data.
+
 
 ## Additional information
 
