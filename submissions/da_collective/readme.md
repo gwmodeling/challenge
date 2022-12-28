@@ -47,4 +47,4 @@ The development time is spread over all the locations as the scripting was devel
 
 ## Additional information
 
-
+There looks to be about a year of time missing for the "netherlands" location from sept 2015 (end of historic period) to sept 2016 in the example submission file so we re-indexed our results to align with that datetime index.
