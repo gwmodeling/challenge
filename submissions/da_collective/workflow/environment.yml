@@ -1,0 +1,16 @@
+name: challenge
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - pandas 
+  - numpy 
+  - numba
+  - matplotlib 
+  - jupyter 
+  - notebook 
+  - scipy 
+
+
+

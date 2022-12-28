@@ -4,47 +4,49 @@ In this file the submission is described.
 
 ## Author(s)
 
-- Jeremy White (Intera)
-- Nick Martin (SWRI)
-- Rui Hugman (Intera)
-- Mike Fienen (USGS)
-- Ed de Sousa (Intera)
+- Author 1 (Affiliation(s))
+- Author 2 (Affiliation(s))
 
 ## Modeled locations
 
 We modelled the following locations (check modelled locations):
 
 - [x] Netherlands
-- [x] Germany
+- [ ] Germany
 - [X] Sweden 1
-- [x] Sweden 2
-- [x] USA
+- [ ] Sweden 2
+- [ ] USA
 
 ## Model description
 
-We used the model Pastas as described in detail in Collenteur et al. (2019). This is a TFN type of model. The model is 
-implemented in the Pastas software package that was used here.  We used PESTPP-IES to derive a posterior ensemble of Pastas parameters and forcing multipliers
+We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
+implemented in the XX software package that was used here.
 
 ## Model workflow to reproduce
 
-Everything is encapsulated in "workflow.py". Specific version of Pastas and pyEMU as included, as are binaries for PESTPP-IES
+Please provide a detailed description of the modeling workflow here, in such a way that the results may be 
+reproduced independently by others. The preferred way to ensure reproducibility is to provide a commented script and 
+environment settings.
 
 ## Supplementary model data used
 
-'No additional information was obtained and/or used.'
+Please describe any additional information that was used to model the hydraulic head time series. If no additional 
+information was used, please state: 'No additional information was obtained and/or used.'
 
 ## Estimation of effort
 
-The development time is spread over all the locations as the scripting was developed to work for all locations.  The calibration time is how long it takes PESTPP-IES to run for each location.  Note there were several iterations of the calibration process - these are baked into the development time estimates
+Please provide an (rough) estimate of the time it took to develop the models (e.g., read in data, pick a model 
+structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that 
+were required.
 
-| Location    | Development time (hrs) | Calibration time (min) | Total time (hrs) | 
+| Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------|------------------------|----------------------|------------------|
-| Netherlands | ~ 4                    |                      |                  |
-| Germany     | ~ 4                    |                      |                  |
-| Sweden 1    | ~ 4                    |                      |                  |
-| Sweden 2    | ~ 4                    |                      |                  |
-| USA         | ~ 4                    |                      |                  |
+| Netherlands | ~ 2                    | 40                   | 02:00:40         |
+| Germany     |                        |                      |                  |
+| Sweden 1    |                        |                      |                  |
+| Sweden 2    |                        |                      |                  |
+| USA         |                        |                      |                  |
 
 ## Additional information
 
-This is really a "groundwater time-series modeling challenge", not a "groundwater modeling challenge" more generally.  The latter would also include readily available spatial information as well as basic estimates of hydrogeologic quantities, so that even rudimentary process-based models could be applied.  Just sayin.
+If you want to provide any additional information about your model/submission/results, please do so here.
