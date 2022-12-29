@@ -54,4 +54,4 @@ were required.
 All this work was conducted in Python version 3.8.13, using a
 Dell workstation with an NVIDIA Quadro RTX 5000 GPU and 128GB RAM
 
-If you want to provide any additional information about your model/submission/results, please do so here.
+
