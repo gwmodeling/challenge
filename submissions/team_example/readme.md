@@ -1,21 +1,23 @@
-# Team Example
+# Team M2C CNRS & BRGM
 
 In this file the submission is described. 
 
 ## Author(s)
 
-- Author 1 (Affiliation(s))
-- Author 2 (Affiliation(s))
+- Sivarama Krishna Reddy Chidepudi (M2C CNRS & BRGM)
+- Abel Henriot (BRGM)
+- Nicolas Massei(M2C CNRS)
+- Abderrahim Jardani(M2C CNRS) 
 
 ## Modeled locations
 
-We modelled the following locations (check modelled locations):
+We modelled the following locations :
 
 - [x] Netherlands
-- [ ] Germany
+- [X] Germany
 - [X] Sweden 1
-- [ ] Sweden 2
-- [ ] USA
+- [X] Sweden 2
+- [X] USA
 
 ## Model description
 
