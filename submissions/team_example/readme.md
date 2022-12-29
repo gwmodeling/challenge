@@ -30,7 +30,7 @@ For both locations, we used a Support Vector Machine Regression model (SVR). Thi
 - Using the input data, we created addional features, which include the mean value of each feature over the past 15, 20 and 90 days, as well as a 'day' feature that specifies the day of the month
 - We use the MSE as our evaluation metric, and tried three different ML algorithms: Lasso regression, SVR, and random forest regressor
 - We split the training data further into training and testing sets, train the model on the training set, predict on the test set, and calculate the MSE score on the test set. We repeat this procedure for 5 iterations, each interation consists of different test set, and a training set that includes all the datapoints that are earlier in time than the test set. This gives 5 different models and 5 different MSE test scores for each ML algorithm.
-- In both locations, the SVR algorithm performed the best, in terms of having a low mean MSE score, low variance in the MSE scores as well as a relatively shorter run time
+- In both locations (Germany and Netherlands), the SVR algorithm performed the best, in terms of having a low mean MSE score, low variance in the MSE scores as well as a relatively shorter run time
 - We then use these 5 models to produce 5 predictions on the test data used for submission, and take the average of the 5 predictions as our final prediction. We take the square root of the mean of the 5 MSE scores as the RMSE of our prediction. The 95% prediction interval is calculated by adding and subtracting 1.96*RMSE to our final prediction.
 
 ### Code:
