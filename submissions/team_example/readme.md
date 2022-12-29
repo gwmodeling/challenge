@@ -69,4 +69,4 @@ Most of the time was spent developing the model for Germany, and then we applied
 
 ## Additional information
 
-For the Netherlands submission, we included two files. The [submission form](submission_form_Netherlands.csv) only includes predictions for the days present in the form, and the [full simulation results](full_simulation_results_Netherlands.csv) contains predictions for all the dates after 2000-01-01.
+For the Netherlands submission, we included two files. The [submission form](submission_form_Netherlands.csv) only includes predictions for the days present in the form, and the [full simulation results](full_simulation_results_Netherlands.csv) contains predictions for all the days after 2000-01-01.
