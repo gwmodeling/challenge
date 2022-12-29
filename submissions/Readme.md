@@ -21,10 +21,11 @@ We modelled the following locations :
 
 ## Model description
 
-We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
+We used the MODWT-assisted DL models as described in detail in Chidepudi et al. (2022). This is a XX type of model. The model is 
 implemented in the XX software package that was used here.
 
 ## Model workflow to reproduce
+
 
 Please provide a detailed description of the modeling workflow here, in such a way that the results may be 
 reproduced independently by others. The preferred way to ensure reproducibility is to provide a commented script and 
