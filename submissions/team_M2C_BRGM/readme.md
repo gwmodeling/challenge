@@ -21,7 +21,7 @@ We modelled the following locations :
 
 ## Model description
 
-We used the Boundary corrected-maximal overlap wavelet transfrom deep learning model (BC-MODWT-DL) models for four wells (Germany,Netherlands,Sweden_2,USA) and BILSTM for one well(Sweden_1) using the approach as described in detail in Chidepudi et al. (2022). This is a deep learning model with wavelet preprocessing.  
+We used the Boundary corrected-maximal overlap wavelet transform deep learning (BC-MODWT-DL) models for four wells (Germany,Netherlands,Sweden_2,USA) and BILSTM for one well(Sweden_1) using the approach as described in detail in Chidepudi et al. (2022). These are deep learning models with wavelet preprocessing.  
 
 ## Model workflow to reproduce
 All the models are implemented in python and neccesary scripts to reproduce the work  are given in the scripts folder. We used tensorflow library for DL models and OPTUNA for hyperparameter tuning using bayesian optimisation. For data handling we used pandas and numpy libraries. The extra library wmtsa_cima is needed for the implementation of MODWT, and the wheel is given in the wmtsa_cima repository. Installation can be done folowing instruction in the readme.md file inside the scripts folder. 
@@ -56,6 +56,8 @@ Final subimitted simulations for each well were using the following combinations
 USA, Germany, Netherlands : LSTM + BC-MODWT
 Swenden 1 : BILSTM
 Sweden 2 : GRU + BC-MODWT
+
+Also all the models used here are stacked models with multiple layers with layers and other hyperparemeters being optimised for each well.
 
 # how we selected the above combinations :
 We ran the simulations for each well for all possible combinations i.e., 3 deep learning models (GRU,LSTM,BiLSTM) with and without BC-MODWT (also for different wavelets la8 to la16) pre-processing and validated this models on last 20% of training set for different metrics (RMSE,MAE,R2) and then choose one suitable model for each well even though in most of the cases similar results were obtained, We choose combination that requires removing of less boundary-affected coefficients. The necessity of removing these coefficients and other details can be seen from Chidepudi et al (2022). All the combinations can be checked using the scripts provided by changing the modtype (LSTM,BiLSTM,GRU) and Wavelet types (La8,La10....La16) 
