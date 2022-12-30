@@ -26,7 +26,7 @@ We used the Boundary corrected-maximal overlap wavelet transform deep learning (
 ## Model workflow to reproduce
 All the models are implemented in python and neccesary scripts to reproduce the work  are given in the scripts folder. We used tensorflow library for DL models and OPTUNA for hyperparameter tuning using bayesian optimisation. For data handling we used pandas and numpy libraries. The extra library wmtsa_cima is needed for the implementation of MODWT, and the wheel is given in the wmtsa_cima repository. Installation can be done folowing instruction in the readme.md file inside the scripts/mwtsa_cima folder. 
 
-Scripts provided are self-explanatory. The results can be reproduced by changing just the well name and working directory in the beginning of the scripts.We provided two scipts one with BC-MODWT-DL (DL_MODWT_4Wells.py) and other one is for simple DL models.   
+Scripts provided are self-explanatory. The results can be reproduced by changing just the well name and working directory in the beginning of the scripts.We provided two scipts one with BC-MODWT-DL (DL_MODWT_4Wells.py) and other one is for simple DL models(Sweden_1_script_BLSTM.py).   
 
 ## Supplementary model data used
 
