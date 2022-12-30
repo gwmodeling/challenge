@@ -34,9 +34,7 @@ Scripts provided are self-explanatory. The results can be reproduced by changing
 
 ## Estimation of effort
 
-Please provide an (rough) estimate of the time it took to develop the models (e.g., read in data, pick a model 
-structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that 
-were required.
+
 Total development is split over the wells and even though same script can be used for all wells, it took time to check for multiple possibilties and the select one suitable combination for each well 
 
 | Location    | Development time (hrs) | Calibration time (Mins) | Total time (hrs) | 
