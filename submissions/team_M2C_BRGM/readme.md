@@ -21,7 +21,7 @@ We modelled the following locations :
 
 ## Model description
 
-We used the Boundary corrected-maximal overlap wavelet transform deep learning (BC-MODWT-DL) models for four wells (Germany,Netherlands,Sweden_2,USA) and BILSTM for one well(Sweden_1) using the approach as described in detail in Chidepudi et al. (2022). These are deep learning models with wavelet preprocessing.  
+We used the Boundary corrected-maximal overlap wavelet transform deep learning (BC-MODWT-DL) models for four wells (Germany,Netherlands,Sweden_2,USA) and Bidirectional LSTM (BiLSTM) for one well(Sweden_1) using the approach as described in detail in Chidepudi et al. (2022). These are deep learning models with wavelet preprocessing.  
 
 ## Model workflow to reproduce
 All the models are implemented in python and neccesary scripts to reproduce the work  are given in the scripts folder. We used tensorflow library for DL models and OPTUNA for hyperparameter tuning using bayesian optimisation. For data handling we used pandas and numpy libraries. The extra library wmtsa_cima is needed for the implementation of MODWT, and the wheel is given in the wmtsa_cima repository. Installation can be done folowing instruction in the readme.md file inside the scripts/mwtsa_cima folder. 
