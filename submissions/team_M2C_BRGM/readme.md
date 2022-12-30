@@ -65,5 +65,5 @@ We ran the simulations for each well for all possible combinations i.e., 3 deep 
 For more details, please contact us using the emails provided in the beginning. We are happy to hear from you and contribute further in the challenge.
 
 
-##References
+## References
 Chidepudi, S. K. R., Massei, N., Jardani, A., Henriot, A., Allier, D., & Baulon, L. (2022). A wavelet-assisted deep learning approach for simulating groundwater levels affected by low-frequency variability. Science of The Total Environment, 161035. https://doi.org/10.1016/j.scitotenv.2022.161035
