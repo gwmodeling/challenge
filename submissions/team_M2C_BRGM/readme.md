@@ -58,6 +58,8 @@ Swenden 1 : BILSTM
 Sweden 2 : GRU + BC-MODWT
 
 Also all the models used here are stacked models with multiple layers with layers and other hyperparemeters being optimised for each well.
+ 
+You might notice that out start date of simulations is different from 2002-01-01 as we had to remove boundary affected coefficients hence our simulations start at later date.
 
 # how we selected the above combinations :
 We ran the simulations for each well for all possible combinations i.e., 3 deep learning models (GRU,LSTM,BiLSTM) with and without BC-MODWT (also for different wavelets la8 to la16) pre-processing and validated this models on last 20% of training set for different metrics (RMSE,MAE,R2) and then choose one suitable model for each well even though in most of the cases similar results were obtained, We choose combination that requires removing of less boundary-affected coefficients. The necessity of removing these coefficients and other details can be seen from Chidepudi et al (2022). All the combinations can be checked using the scripts provided by changing the modtype (LSTM,BiLSTM,GRU) and Wavelet types (La8,La10....La16) 
