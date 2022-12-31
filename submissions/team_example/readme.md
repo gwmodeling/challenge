@@ -4,49 +4,42 @@ In this file the submission is described.
 
 ## Author(s)
 
-- Author 1 (Affiliation(s))
-- Author 2 (Affiliation(s))
+- Jonathan Kennel (University of Guelph G360 Group)
 
 ## Modeled locations
 
-We modelled the following locations (check modelled locations):
+The following locations were modelled (check modelled locations):
 
-- [x] Netherlands
-- [ ] Germany
-- [X] Sweden 1
+- [] Netherlands
+- [x] Germany
+- [ ] Sweden 1
 - [ ] Sweden 2
 - [ ] USA
 
 ## Model description
 
-We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
-implemented in the XX software package that was used here.
+Linear regression model with distributed lag components
 
 ## Model workflow to reproduce
 
-Please provide a detailed description of the modeling workflow here, in such a way that the results may be 
-reproduced independently by others. The preferred way to ensure reproducibility is to provide a commented script and 
-environment settings.
+The code necessary to reproduce the output can be found in the .qmd file of this repository.
 
 ## Supplementary model data used
 
-Please describe any additional information that was used to model the hydraulic head time series. If no additional 
-information was used, please state: 'No additional information was obtained and/or used.'
+No additional data was used.
 
 ## Estimation of effort
 
 Please provide an (rough) estimate of the time it took to develop the models (e.g., read in data, pick a model 
-structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that 
-were required.
+structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that were required. This was done on a MacBook Air 2020 M1.
 
 | Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------|------------------------|----------------------|------------------|
-| Netherlands | ~ 2                    | 40                   | 02:00:40         |
-| Germany     |                        |                      |                  |
+| Netherlands |                        |                      |                  |
+| Germany     | ~ 3                    |   < 5                | 03:00:05         |
 | Sweden 1    |                        |                      |                  |
 | Sweden 2    |                        |                      |                  |
 | USA         |                        |                      |                  |
 
 ## Additional information
 
-If you want to provide any additional information about your model/submission/results, please do so here.
