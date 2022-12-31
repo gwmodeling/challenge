@@ -45,4 +45,4 @@ Because of the limited computational resources available, we were not able to ap
 
 ## Additional information
 
-No additional information is provided.
+Individual results corresponding to the ensemble members can be found in the additional folders (`pred_netherlands` / `pred_usa`).
