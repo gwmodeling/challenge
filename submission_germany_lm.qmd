@@ -146,11 +146,11 @@ subplot(p1, p2, shareX = TRUE, nrows = 2)
 ### Output submission
 
 ```{r}
-submission_times <- fread("submissions/team_example/submission_form_Germany.csv")
+submission_times <- fread("submissions/team_example/submission_form_Germany_lm.csv")
 submission <- dat[datetime %in% submission_times$Date]
 
 submission <- submission[, list(Date = datetime,
-                         `Simulated Head"` = fit,
+                         `Simulated Head` = fit,
                          `95% Lower Bound` = lwr,
                          `95% Upper Bound` = upr)]
 fwrite(submission, "submission_form_Germany_lm.csv")
