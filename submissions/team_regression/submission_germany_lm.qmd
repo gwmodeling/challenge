@@ -59,9 +59,9 @@ dat <- outcome[predictors, on = 'datetime']
 
 # ad hoc estimate of water deficit. Use distributed lag model for predictors
 dat[, deficit := cumsum(scale(precipitation)) - cumsum(scale(evapotranspiration))]
-dat[, deficit := lm(deficit~splines::ns(datetime, df = 18))$residuals]
-varknots <- dlnm::equalknots(dat$deficit, fun = "bs", degree = 3, df = 5)
-lagknots <- logknots(365 * 3, 17)
+dat[, deficit := lm(deficit~splines::ns(datetime, df = 6))$residuals]
+varknots <- c(min(dat$deficit), -40, 75, max(dat$deficit))
+lagknots <- logknots(365 * 3, 27)
 cb <- crossbasis(dat$deficit, lag = 365 * 3,
                  argvar = list(fun = "bs", knots = varknots),
                  arglag = list(knots = lagknots))
@@ -78,7 +78,7 @@ dat[, precip_evapo := precipitation * 1.0 / evapotranspiration]
 # ad hoc snow melt
 dat[, min_temp_diff := c(0, diff(temperature_min, lag = 1))]
 dat[, snow_melt := 0]
-dat[min_temp_diff >= 7  & month(datetime) %in% 1:3, snow_melt := 1]
+dat[min_temp_diff >= 7.5  & month(datetime) %in% 1:3, snow_melt := 1]
 dat[, snow_melt := pmin(snow_melt * precipitation, 1)]
 
 # create feature dataset
@@ -86,9 +86,9 @@ all <- recipe(wl~., dat) |>
   step_interact(terms = ~ precipitation:evapotranspiration) |>
   step_interact(terms = ~ precipitation:temperature_mean) |>
   step_distributed_lag(sea_pressure,     knots = log_lags(5, 15)) |>
-  step_distributed_lag(precipitation,    knots = log_lags(30, 180)) |>
-  step_distributed_lag(precip_evapo,     knots = log_lags(21, 120)) |>
-  step_distributed_lag(snow_melt, knots = log_lags(35, 90)) |>
+  step_distributed_lag(precipitation,    knots = log_lags(50, 180)) |>
+  step_distributed_lag(precip_evapo,     knots = log_lags(40, 180)) |>
+  step_distributed_lag(snow_melt, knots = log_lags(40, 120)) |>
   step_ns(humidity, deg_free = 20) |>
   step_ns(wind, deg_free = 8) |>
   step_ns(doy, deg_free = 13) |>
@@ -122,22 +122,26 @@ A median filter to smooth the results as they appeared to have too much variance
 
 ```{r}
 
-p1 <- plot_ly(dat, x = ~datetime, 
+dat[, fit := runmed(dat$fit, 7)]
+
+p1 <- plot_ly(dat[year(datetime) > 2001], x = ~datetime, 
               y = ~wl, 
               type = "scatter", 
               mode = "lines", 
               name = "Water Level",
               line = list(color = "#808080")) |>
-  add_lines(x = ~datetime, y = ~runmed(fit, 7), name = "Predictions" ,
+  add_lines(x = ~datetime, y = ~fit, name = "Predictions" ,
             line = list(color = "#6000FF60"))
 
-p2 <- plot_ly(dat, x = ~datetime, 
+p2 <- plot_ly(dat[year(datetime) > 2001], x = ~datetime, 
               y = ~wl - fit, 
               type = "scatter", 
               mode = "lines", 
               name = "Residuals",
               line = list(color = "#808080")) 
 subplot(p1, p2, shareX = TRUE, nrows = 2)
+
+sum((dat$wl-dat$fit)^2, na.rm = TRUE)
 
 ```
 

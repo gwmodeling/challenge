@@ -36,7 +36,7 @@ structure, etcetera) and calibrate the parameters (if any). If possible, please 
 | Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------|------------------------|----------------------|------------------|
 | Netherlands |                        |                      |                  |
-| Germany     | ~ 3                    |   < 5                | 03:00:05         |
+| Germany     | ~ 4                    |   < 5                | 04:00:05         |
 | Sweden 1    |                        |                      |                  |
 | Sweden 2    |                        |                      |                  |
 | USA         |                        |                      |                  |
