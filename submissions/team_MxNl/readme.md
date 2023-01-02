@@ -21,7 +21,7 @@ I used an ensemble of different shallow, non-sequential learners
 - Radial Basis Function support Vector Machine (RBF-SVM), Rpackage `kernlab`, Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992)
 - Polynomial Support Vector Machine (P-SVM), Rpackage `kernlab`, Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992)
 
-The set of members of the ensemble is different for each of the time series due to the automated tuning and stacking pipline of ensemble candidates. This pipeline is described more in detail below
+The set of members of the ensemble is different for each of the time series due to the automated tuning and stacking pipline of ensemble candidates. This pipeline is described more in detail below.
 
 ## Model workflow to reproduce
 
@@ -47,7 +47,9 @@ From this point, the four feature engineering recipes differ. For details on dif
 - Standardization of numeric predictors
 - Lagged predictors were added for the predictors rr (precipitation) and et (evapotranspiration) for up to 25 weeks.
 
-The most recent 10% of each time series was used for testing. The remaining 90% were used for tuning the hyperparameters. A 5-fold crossvalidation with ?? repetitions was used as resampling strategy as I used non-sequential learners only. The tuning was conducted with a simple grid search with ?? different values/levels for each parameter, leading to $n_{levels}^{n_{hyperparameters}}$ combinations. The tuning was done for all learners for all four feature engineering recipes and for all locations. RMSE was used as metric during tuning. The two best performing models of each learner were chosen as possible candidates for building the ensemble. 
+The most recent 10% of each time series was used for testing. The remaining 90% were used for tuning the hyperparameters. A 5-fold crossvalidation with ?? repetitions was used as resampling strategy as I used non-sequential learners only. The tuning was conducted with a simple grid search with ?? different values/levels for each parameter, leading to $n_{levels}^{n_{hyperparameters}}$ combinations. The tuning was done for all learners for all four feature engineering recipes and for all locations. RMSE was used as metric during tuning. The two best performing models of each learner were chosen as possible candidates for building the ensemble. Once the performance was known, this pipeline was applied to the fulll training period defined by the organizers.
+
+The code can be found in this github release: ??
 
 ## Supplementary model data used
 
@@ -56,7 +58,7 @@ No additional data was used for modelling. Feature engineering is only based on 
 ## Estimation of effort
 
 The provided development time also includes some trial and error iterations with different models and hyperparameter ranges, bug fixing etc.
-The tuning took for all locations took around ?? hours and is not included in the table. 
+The tuning for all locations took around ?? hours and is not included in the table. 
 
 | Location    | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------|------------------------|----------------------|------------------|
@@ -65,5 +67,6 @@ The tuning took for all locations took around ?? hours and is not included in th
 ## Additional information
 
 Just some general remarks:
-- No ChatGPT was used to produce this markdown file. 
-- Nested crossvalidation for tuning would have been nice to reduce overfitting, but wasn't implemented due to lack of time.
+- No ChatGPT was used to produce this markdown file :smiley:.
+- I chose this setup of learners out of curiosity, not because I personally think they would compete with sequential or recurrent models like CNN or LSTM.
+- Overfitting is still an issue for some of the locations. Nested crossvalidation for tuning would have been nice to reduce overfitting, but wasn't implemented due to lack of time.
