@@ -97,7 +97,7 @@ prepare_resamples <- function(df_input) {
 
 
 
-# import data -----------------------------------------------
+# Define locations and train/test dates-----------------------------------------
 info <- list(tibble(well = "Germany", train_start = as_date("2002-05-01"), train_end = as_date("2016-12-31"),
             test_start = as_date("2017-01-01"), test_end = as_date("2022-12-31")),
      tibble(well = "Netherlands", train_start = as_date("2000-01-01"), train_end = as_date("2015-09-10"),

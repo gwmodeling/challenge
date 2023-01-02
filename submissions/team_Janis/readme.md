@@ -1,4 +1,4 @@
-# Team Example
+# Team Janis
 
 In this file the submission is described. 
 
@@ -43,7 +43,7 @@ were required.
 | Sweden 2    | ~ 0.5                  | 60                   | 00:31:00         |
 | USA         | ~ 1                    | 289                  | 01:04:49         |
 
-Most (roughtly estimated) development time was spent to create a general structure of the workflow (using Germany data) and partly to prepare new variables (including the assessment of their importance), while less time was necessary to scale this approach to other case studies. Eventually models for all locations were merge into a single script *RF_model_Janis.R*. Calibration time corresponds to time spent on tuning *mtry* parameter (7 mtry values) with resamples (8 splits of resamples) for Random forest model, which was run on 8 parallel CPUs
+Most (roughtly estimated) development time was spent to create a general structure of the workflow (using Germany data) and partly to prepare new variables (including the assessment of their importance), while less time was necessary to scale this approach to other case studies. Eventually models for all locations were merged into a single script *RF_model_Janis.R*. Calibration times correspond to time spent on tuning *mtry* parameter (7 mtry values) with resamples (8 splits of resamples) for Random forest model, which was run on 8 parallel CPUs
 
 ## Additional information
 
