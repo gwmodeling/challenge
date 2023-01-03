@@ -1,6 +1,6 @@
-# Team Example
+# The DA Collective
 
-In this file the submission is described. 
+In this file the submission is described from the DA Collective
 
 ## Author(s)
 
@@ -23,11 +23,11 @@ We modelled the following locations (check modelled locations):
 ## Model description
 
 We used the model Pastas as described in detail in Collenteur et al. (2019). This is a TFN type of model. The model is 
-implemented in the Pastas software package that was used here.  We used PESTPP-IES to derive a posterior ensemble of Pastas parameters and forcing multipliers
+implemented in the Pastas software package that was used here.  We used PESTPP-IES and a lot of dirty tricks to derive a highly-subjective posterior ensemble of Pastas parameters and forcing multipliers that were used to produce a best-fit and upper/lower confidence interval.  This is all detailed in the provided workflow
 
 ## Model workflow to reproduce
 
-Everything is encapsulated in "workflow.py". Specific version of Pastas and pyEMU as included, as are binaries for PESTPP-IES
+Everything is encapsulated in workflow/ dir and is driven by "workflow.py". Specific version of Pastas and pyEMU as included, as are binaries for PESTPP-IES
 
 ## Supplementary model data used
 
@@ -47,4 +47,4 @@ The development time is spread over all the locations as the scripting was devel
 
 ## Additional information
 
-
+There looks to be about a year of time missing for the "netherlands" location from sept 2015 (end of historic period) to sept 2016 in the example submission file so we re-indexed our results to align with that datetime index.
