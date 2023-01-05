@@ -4,31 +4,34 @@ In this file the submission is described.
 
 ## Author(s)
 
--Anna Pölz (TU Wien)
--Ali Obeid (TU Wien) ?
--Ahmad Ameen (TU Wien)
+- Author 1 (Affiliation(s))
+- Author 2 (Affiliation(s))
 
 ## Modeled locations
 
 We modelled the following locations (check modelled locations):
 
 - [x] Netherlands
-- [x] Germany
+- [ ] Germany
 - [X] Sweden 1
-- [x] Sweden 2
-- [x] USA
+- [ ] Sweden 2
+- [ ] USA
 
 ## Model description
 
-We used the Transformer model as described in detail in Vaswani et al. (2017). Since it was applied for time series forecasting we omitted the input embedding. This is a deep learning type of model. The model is implemented in python. Tensorflow and Keras software packages were used here.
+We used the model XX as described in detail in XX et al. (1979). This is a XX type of model. The model is 
+implemented in the XX software package that was used here.
 
 ## Model workflow to reproduce
 
-Normalization was used as a preprocessing step. All independent variables were used for calibrating the model. Input windows of 30 days were chosen as input for the model to predict the hydraulic head. The models were tuned using keras tuner (Random search) with maximal trials of 10. The following variables were tuned: head size, filter size and MLP units. The further parameters were set to the following values: number of heads = 1, number of encoder blocks =2, dropout=0.1, MLP dropout=0.1. The Transformer model was implemented as an encoder-only version. To provide prediction intervals Monte Carlo dropout was used and the intervals were calibrated for 95% percentage of coverage (interval covers measured value) on the calibration set. The environment is saved under GW_challenge.yml. 
+Please provide a detailed description of the modeling workflow here, in such a way that the results may be 
+reproduced independently by others. The preferred way to ensure reproducibility is to provide a commented script and 
+environment settings.
 
 ## Supplementary model data used
 
-No additional information was obtained and/or used.
+Please describe any additional information that was used to model the hydraulic head time series. If no additional 
+information was used, please state: 'No additional information was obtained and/or used.'
 
 ## Estimation of effort
 
