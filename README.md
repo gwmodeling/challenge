@@ -57,8 +57,7 @@ released after the challenge ended.
 
 ## Deadline
 
-The deadline for the challenge is **31/12/2022**. Please make sure to submit before this date. We plan to share the 
-results of this challenge at the EGU General Assembly 2023.
+The deadline for the challenge is **31/12/2022. Late submission are allowed untill 5th of January 24:00 CET.** Please make sure to submit before this date. We plan to share the results of this challenge at the EGU General Assembly 2023.
 
 ## Participation & Submission
 If you intend to participate, [please open a GitHub Issue for your team](https://github.com/gwmodeling/challenge/issues), such that we can track the participating teams.

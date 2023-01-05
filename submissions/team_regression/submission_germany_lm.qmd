@@ -1,0 +1,182 @@
+---
+title: "Prediction Challenge - Germany"
+author: "Jonathan Kennel"
+format:
+  html:
+    embed-resources: true
+editor: visual
+bibliography: method.bib
+---
+
+### Lagged linear regression model
+
+This model can be interpreted and refined based on the responses of each regressor group. It will not be the most accurate predictor, but it is fast and can help identify the most important components. This method is similar to what is found in [@kennelthesis2020].
+
+### Set-up
+
+```{r}
+#| warning: false
+#| message: false
+start_time <- Sys.time()
+# Load helper packages
+library(data.table)
+library(plotly)
+library(tidymodels)
+library(hydrorecipes)
+
+# new names for predictors
+nms_other <- c('datetime',
+               'precipitation',
+               'temperature_mean',
+               'temperature_min',
+               'temperature_max',
+               'sea_pressure',
+               'humidity',
+               'wind',
+               'insolation',
+               'evapotranspiration')
+
+```
+
+### Prepare data
+
+```{r}
+#| echo: true
+outcome    <- fread('../../data/Germany/heads.csv')
+predictors <- fread('../../data/Germany/input_data.csv')
+
+# make names more verbose
+setnames(outcome, c('datetime', 'wl'))
+setnames(predictors, nms_other)
+
+# join data and make a numeric time column
+dat <- outcome[predictors, on = 'datetime']
+
+# join data and make a numeric time column
+dat <- outcome[predictors, on = 'datetime']
+
+# ad hoc estimate of water deficit. Use distributed lag model for predictors
+dat[, deficit := cumsum(scale(precipitation)) - cumsum(scale(evapotranspiration))]
+dat[, deficit := lm(deficit~splines::ns(datetime, df = 6))$residuals]
+varknots <- c(-40, 75)
+nms <- paste0('deficit_', 1:(length(varknots) + 3))
+dat[, c(nms) := as.data.table(splines::bs(deficit, knots = varknots))]
+
+# ad hoc snow melt
+dat[, min_temp_diff := c(0, diff(temperature_min, lag = 1))]
+dat[, snow_melt := 0]
+dat[min_temp_diff >= 7.1  & month(datetime) %in% c(1:3), snow_melt := 1]
+dat[, snow_melt := snow_melt * precipitation]
+
+# separate precipitation into snow and rain
+dat[, precipitation_snow := 0]
+dat[, precipitation_rain := 0]
+dat[temperature_max <= 0, precipitation_snow := precipitation]
+dat[temperature_max > 0, precipitation_rain := precipitation]
+
+# scaled precipitation based on ET
+dat[, precip_evapo := precipitation_rain * 1.0 / evapotranspiration]
+
+# temperature changes
+dat[, temperature_diff := temperature_max - temperature_mean]
+
+# clean-up
+dat[, deficit := NULL]
+dat[, precipitation := NULL]
+
+# create feature dataset
+all <- recipe(wl~., dat) |>
+  step_distributed_lag(precipitation_rain,    
+                       knots = log_lags(45, 270)) |>
+  step_distributed_lag(precipitation_snow,    
+                       knots = log_lags(15, 90)) |>
+  step_distributed_lag(precip_evapo,
+                       knots = log_lags(30, 180)) |>
+  step_distributed_lag(snow_melt,
+                       knots = log_lags(30, 180)) |>
+  step_distributed_lag(starts_with("deficit"),
+                       knots = log_lags(51, 365 * 3.6)) |>
+  step_ns(temperature_diff, deg_free = 12)|>
+  step_rm(datetime) |>
+  step_corr(all_predictors()) |>
+  prep() |>
+  bake(new_data = NULL)
+
+setDT(all)
+```
+
+### Fit model
+
+```{r}
+fit <- lm(wl~., all)
+```
+
+### Make predictions
+
+```{r}
+dat <- cbind(dat, predict(fit, all, interval = "prediction"))
+```
+
+### Plot results
+
+A median filter to smooth the results as they appeared to have too much variance.
+
+```{r}
+
+dat[, fit := runmed(fit, 5)]
+p1 <- plot_ly(dat[datetime > as.POSIXct('2002-04-30', tz = 'UTC')],
+              x = ~datetime, 
+              y = ~wl, 
+              type = "scatter", 
+              mode = "lines", 
+              name = "Water Level",
+              line = list(color = "#808080")) |>
+  add_lines(x = ~datetime, y = ~fit, name = "Predictions" ,
+            line = list(color = "#6000FF60"))
+
+p2 <- plot_ly(dat[year(datetime) > 2001], x = ~datetime, 
+              y = ~wl - fit, 
+              type = "scatter", 
+              mode = "lines", 
+              name = "Residuals",
+              line = list(color = "#808080")) 
+subplot(p1, p2, shareX = TRUE, nrows = 2)
+
+sum((dat$wl-dat$fit)^2, na.rm = TRUE)
+
+```
+
+### Output submission
+
+```{r}
+submission_times <- fread("submission_form_Germany.csv")
+submission <- dat[datetime %in% submission_times$Date]
+
+submission <- submission[, list(Date = datetime,
+                                `Simulated Head` = fit,
+                                `95% Lower Bound` = lwr,
+                                `95% Upper Bound` = upr)]
+fwrite(submission, "submission_form_Germany.csv")
+
+end_time <- Sys.time()
+```
+
+### Timings
+
+Total elapsed time is `r round(as.numeric(end_time) - as.numeric(start_time), 1)` seconds.
+
+### References
+
+::: {#refs}
+:::
+
+### Computer and software specs
+
+Macbook Air M1 2020
+
+16 GB Ram
+
+```{r}
+#| echo: true
+sessionInfo()
+```
