@@ -36,8 +36,8 @@ def fit_model(location, epochs=20, hidden_units=60, aggregation_days=10, naam='f
         os.makedirs(o_folder)
 
     # Load data
-    df = pd.read_csv(f'../data/{location}/heads.csv', index_col=0, parse_dates=True)
-    df_meteo = pd.read_csv(f'../data/{location}/input_data.csv', index_col=0, parse_dates=True)
+    df = pd.read_csv(f'../../data/{location}/heads.csv', index_col=0, parse_dates=True)
+    df_meteo = pd.read_csv(f'../../data/{location}/input_data.csv', index_col=0, parse_dates=True)
 
     # Truncate to period where we can make predictions
     first_available_date = df_meteo.first_valid_index() + relativedelta(days=60) + relativedelta(days=12*hist_years*30)
@@ -154,10 +154,10 @@ def forecast_gw(location, scaler_q, aggregation_days=10, naam='first_iteration',
     o_folder = f'LSTM/{location}'
 
     # Get the dates for submission
-    df = pd.read_csv(f'../submissions/team_haidro/submission_form_{location}.csv', index_col=0, parse_dates=True)
+    df = pd.read_csv(f'submission_form_{location}.csv', index_col=0, parse_dates=True)
 
     # Read input data
-    df_meteo = pd.read_csv(f'../data/{location}/input_data.csv', index_col=0, parse_dates=True)
+    df_meteo = pd.read_csv(f'../../data/{location}/input_data.csv', index_col=0, parse_dates=True)
 
     # USA has a slightly different naming
     if location == 'USA':
@@ -235,7 +235,7 @@ def forecast_gw(location, scaler_q, aggregation_days=10, naam='first_iteration',
         scaled_data[c] = scaler_q.inverse_transform(np.reshape(scaled_data[c].values, (-1, 1)))
 
     # Write to output
-    scaled_data.to_csv(f'../submissions/team_haidro/submission_form_{location}.csv')
+    scaled_data.to_csv(f'submission_form_{location}.csv')
 
 
 # This function trains the model and prepares the files for submission

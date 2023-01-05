@@ -52,9 +52,9 @@ that were required.
 
 ## Additional information
 
-First, thanks a lot for organizing this challenge!
+First, thanks a lot for organizing this challenge and good luck processing all the submissions!
 
 Secondly, this is certainly not the best possible submission using a LSTM model. Due to time constraints I've not
-been able to do a proper hyperparmeter tuning and / or more advanced uncertainty estimation. On a similar note also
-the code could certainly use some refactoring. I was however to curious to see how this model would compare against
-other state of the art models not to submit is.
+been able to fully investigate the architectural options, do a proper hyperparmeter tuning and / or more advanced
+uncertainty estimation. On a similar note also the code could certainly use some refactoring and additional documentation.
+I was however to curious to see how this model would compare against other state of the art models not to submit is.
