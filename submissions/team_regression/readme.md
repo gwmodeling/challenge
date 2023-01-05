@@ -22,7 +22,10 @@ Linear regression model with distributed lag components
 
 ## Model workflow to reproduce
 
-The code necessary to reproduce the output can be found in the .qmd file of this repository.
+The code necessary to reproduce the output can be found in the .qmd file of this repository. The general approach for this can be found in Kennel, 2020.
+
+Kennel, Jonathan. 2020. “High Frequency Water Level Responses to Natural Signals.” PhD thesis, University of Guelph. http://hdl.handle.net/10214/17890.
+
 
 ## Supplementary model data used
 
