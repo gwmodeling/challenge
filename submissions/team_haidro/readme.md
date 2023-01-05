@@ -30,8 +30,7 @@ https://gauchm.github.io/
 
 1. First estimate the optimal hyperparameters using the script optimize_params.py. This should work immediately on the
 data and provide the optimized hyperparameters
-2. Optionally evaluate the model performance using evaluate_LSTM_MCdropout.py
-3. Train the final models and prepare the submission using the script prepare_submission
+2. Train the final models and prepare the submission using the script prepare_submission
 
 ## Supplementary model data used
 

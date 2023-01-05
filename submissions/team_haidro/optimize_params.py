@@ -273,7 +273,6 @@ def opt_aggregation(location, epochs, hidden_units, aggregation_days, scale_q=Tr
         val_loss_list.append(np.expand_dims(np.array(history.history['val_loss']), -1))
 
         # Necessary to avoid memory issues
-
         del model
         del opt
         tf.keras.backend.clear_session()
