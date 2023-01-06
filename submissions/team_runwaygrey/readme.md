@@ -35,10 +35,14 @@ Please provide an (rough) estimate of the time it took to develop the models (e.
 structure, etcetera) and calibrate the parameters (if any). If possible, please also state the computational resources that 
 were required.
 
+A single model was trained for all the sites together.
+
 | Location      | Development time (hrs) | Calibration time (s) | Total time (hrs) | 
 |-------------  |------------------------|----------------------|------------------|
+| Germany       | 2                      | 2700                 | 02:30:00         |
+| Netherlands   | 2                      | 2700                 | 02:30:00         |
+| Sweden 1      | 2                      | 2700                 | 02:30:00         |
 | All locations | 2                      | 2700                 | 02:30:00         |
-
 
 ## Additional information
 
