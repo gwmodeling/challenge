@@ -32,12 +32,12 @@ No supplementary model data was used.
 
 ## Estimation of effort
 
-We used a personal computer with 3070 Nvidia GPU. We used GPU for training so the times are very small.
+We used a personal computer with 3070 Nvidia GPU. We used GPU for training so the training times are very small.
 
-| Location    | Development time (s) | Calibration time (s) | Total time (s) | 
+| Location    | Development time (days) | Calibration time (s) | Total time (days) | 
 |-------------|------------------------|----------------------|------------------|
-| Netherlands | ~ 30                    |                    | 30         |
-| Germany     | ~ 30                       |                      |  30                |
+| Netherlands | ~ 3                    | -                   | 3         |
+| Germany     | ~ 3                       | -                     |  3                |
 | Sweden 1    |                        |                      |                  |
 | Sweden 2    |                        |                      |                  |
 | USA         |                        |                      |                  |
