@@ -42,7 +42,7 @@ A single model was trained for all the sites together.
 | Germany       | 2                      | 2700                 | 02:30:00         |
 | Netherlands   | 2                      | 2700                 | 02:30:00         |
 | Sweden 1      | 2                      | 2700                 | 02:30:00         |
-| All locations | 2                      | 2700                 | 02:30:00         |
+| Sweden 2      | 2                      | 2700                 | 02:30:00         |
 
 ## Additional information
 
